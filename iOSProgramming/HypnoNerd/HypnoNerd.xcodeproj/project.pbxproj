@@ -20,6 +20,8 @@
 		A52B5DE71DE20E0900172B04 /* Hypno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A52B5DE31DE20E0900172B04 /* Hypno@2x.png */; };
 		A52B5DE81DE20E0900172B04 /* Time.png in Resources */ = {isa = PBXBuildFile; fileRef = A52B5DE41DE20E0900172B04 /* Time.png */; };
 		A52B5DE91DE20E0900172B04 /* Time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A52B5DE51DE20E0900172B04 /* Time@2x.png */; };
+		A52B5DF11DE2211500172B04 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A52B5DEF1DE2211500172B04 /* QuizViewController.m */; };
+		A52B5DF21DE2211500172B04 /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A52B5DF01DE2211500172B04 /* QuizViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,9 @@
 		A52B5DE31DE20E0900172B04 /* Hypno@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hypno@2x.png"; path = "../../../../../../Downloads/Solutions/00-Resources/Hypno@2x.png"; sourceTree = "<group>"; };
 		A52B5DE41DE20E0900172B04 /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Time.png; path = "../../../../../../Downloads/Solutions/00-Resources/Time.png"; sourceTree = "<group>"; };
 		A52B5DE51DE20E0900172B04 /* Time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Time@2x.png"; path = "../../../../../../Downloads/Solutions/00-Resources/Time@2x.png"; sourceTree = "<group>"; };
+		A52B5DEE1DE2211500172B04 /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuizViewController.h; path = Quiz/QuizViewController.h; sourceTree = "<group>"; };
+		A52B5DEF1DE2211500172B04 /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuizViewController.m; path = Quiz/QuizViewController.m; sourceTree = "<group>"; };
+		A52B5DF01DE2211500172B04 /* QuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuizViewController.xib; path = Quiz/QuizViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +63,8 @@
 		A504257B1DE0CA7C008C5F18 = {
 			isa = PBXGroup;
 			children = (
-				A50425861DE0CA7C008C5F18 /* HypnoNerd */,
 				A50425851DE0CA7C008C5F18 /* Products */,
+				A50425861DE0CA7C008C5F18 /* HypnoNerd */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,13 +79,15 @@
 		A50425861DE0CA7C008C5F18 /* HypnoNerd */ = {
 			isa = PBXGroup;
 			children = (
+				A52B5DFD1DE2254E00172B04 /* SegmentedControl */,
+				A504258D1DE0CA7C008C5F18 /* ViewController.h */,
+				A504258E1DE0CA7C008C5F18 /* ViewController.m */,
+				A52B5DED1DE2210000172B04 /* Quiz */,
 				A52B5DE11DE20DE700172B04 /* images */,
 				A504259E1DE0CBB9008C5F18 /* HypnosisView.h */,
 				A504259F1DE0CBB9008C5F18 /* HypnosisView.m */,
 				A504258A1DE0CA7C008C5F18 /* AppDelegate.h */,
 				A504258B1DE0CA7C008C5F18 /* AppDelegate.m */,
-				A504258D1DE0CA7C008C5F18 /* ViewController.h */,
-				A504258E1DE0CA7C008C5F18 /* ViewController.m */,
 				A50425901DE0CA7C008C5F18 /* Main.storyboard */,
 				A50425931DE0CA7C008C5F18 /* Assets.xcassets */,
 				A50425951DE0CA7C008C5F18 /* LaunchScreen.storyboard */,
@@ -110,6 +117,23 @@
 				A52B5DE51DE20E0900172B04 /* Time@2x.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		A52B5DED1DE2210000172B04 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				A52B5DEE1DE2211500172B04 /* QuizViewController.h */,
+				A52B5DEF1DE2211500172B04 /* QuizViewController.m */,
+				A52B5DF01DE2211500172B04 /* QuizViewController.xib */,
+			);
+			name = Quiz;
+			sourceTree = "<group>";
+		};
+		A52B5DFD1DE2254E00172B04 /* SegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SegmentedControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +199,7 @@
 				A50425971DE0CA7C008C5F18 /* LaunchScreen.storyboard in Resources */,
 				A52B5DE81DE20E0900172B04 /* Time.png in Resources */,
 				A50425941DE0CA7C008C5F18 /* Assets.xcassets in Resources */,
+				A52B5DF21DE2211500172B04 /* QuizViewController.xib in Resources */,
 				A52B5DE71DE20E0900172B04 /* Hypno@2x.png in Resources */,
 				A50425921DE0CA7C008C5F18 /* Main.storyboard in Resources */,
 				A52B5DE61DE20E0900172B04 /* Hypno.png in Resources */,
@@ -194,6 +219,7 @@
 				A504258C1DE0CA7C008C5F18 /* AppDelegate.m in Sources */,
 				A50425891DE0CA7C008C5F18 /* main.m in Sources */,
 				A52B5DDF1DE203F000172B04 /* ReminderViewController.m in Sources */,
+				A52B5DF11DE2211500172B04 /* QuizViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

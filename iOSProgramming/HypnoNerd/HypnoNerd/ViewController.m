@@ -44,6 +44,19 @@
     [super viewDidLoad];
     
     NSLog(@"HypnosisViewController loaded its view");
+    
+    // 初始化UISegmentedControl，设置大小和颜色
+    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"Red", @"Green", @"Blue"]];
+    segmentedControl.frame = CGRectMake(0, 0, 250, 50);
+    segmentedControl.tintColor = [UIColor blackColor];
+    
+    // 注册UISegmentedControl
+    [segmentedControl addTarget:self.view
+                         action:@selector(mainSegmentControl:)
+               forControlEvents: UIControlEventValueChanged];
+    // 添加到视图
+    [self.view addSubview:segmentedControl];
+    
 }
 
 @end

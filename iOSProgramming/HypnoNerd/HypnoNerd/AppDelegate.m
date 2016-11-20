@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "ReminderViewController.h"
+#import "QuizViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -32,8 +33,10 @@
                                    bundle:appBundle];
     */
     ReminderViewController *rvc = [[ReminderViewController alloc]init];
+    QuizViewController *qvc = [[QuizViewController alloc]init];
+    
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[vc, rvc];
+    tabBarController.viewControllers = @[vc, rvc, qvc];
     
     
     

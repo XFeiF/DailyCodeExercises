@@ -13,6 +13,9 @@
 
 @property (strong,nonatomic) UIColor *circleColor;
 
+- (void)mainSegmentControl:(UISegmentedControl *)segment;
+
+
 @end
 // chapter 5 end
 
@@ -90,6 +93,27 @@
 }
 
 
+// mainSegmentControl: 方法用来接受 UISegmentedControl 发的消息
+- (void)mainSegmentControl:(UISegmentedControl *)segment
+{
+    
+    if(segment.selectedSegmentIndex == 0)
+    {
+        // action for the first button (Current or Default)
+        self.circleColor = [UIColor redColor];
+    }
+    else if(segment.selectedSegmentIndex == 1)
+    {
+        // action for the second button
+        self.circleColor = [UIColor greenColor];
+    }
+    else if(segment.selectedSegmentIndex == 2)
+    {
+        // action for the third button
+        self.circleColor = [UIColor blueColor];
+    }
+    
+}
 
 
 @end
